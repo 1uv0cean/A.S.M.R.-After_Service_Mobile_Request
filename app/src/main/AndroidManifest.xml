@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.google.firebase.quickstart.database">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="ManifestOrder" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/inhatc"
+        android:label="A.S.M.R"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="n"
+        android:fullBackupContent="@xml/backup_descriptor">
+
+        <activity android:name=".java.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".java.MainActivity"
+            android:label="인하공업전문대학 IT지원실"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".java.A_PostDetailActivity"
+            android:label="인하공업전문대학 IT지원실"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".java.A_MainActivity"
+            android:label="인하공업전문대학 IT지원실"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".java.SignInActivity"
+            android:label="인하공업전문대학 IT지원실"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".java.NewPostActivity"
+            android:label="인하공업전문대학 IT지원실"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".java.PostDetailActivity"
+            android:label="인하공업전문대학 IT지원실"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".java.MapActivity"
+            android:label="인하공업전문대학 IT지원실"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".java.A_MapActivity"
+            android:label="인하공업전문대학 IT지원실"
+            android:theme="@style/AppTheme" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC0-eXUvZBKahR8YVjURVdy85MquAd8DlE" />
+    </application>
+
+</manifest>

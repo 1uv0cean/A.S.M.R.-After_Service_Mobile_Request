@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ASMR.iml" filepath="$PROJECT_DIR$/.idea/modules/ASMR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ASMR.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ASMR.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/internal/ASMR.internal.iml" filepath="$PROJECT_DIR$/.idea/modules/internal/ASMR.internal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1116157481/ASMR.internal.chooserx.iml" filepath="$PROJECT_DIR$/.idea/modules/-1116157481/ASMR.internal.chooserx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2031078461/ASMR.internal.lint.iml" filepath="$PROJECT_DIR$/.idea/modules/2031078461/ASMR.internal.lint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-222583064/ASMR.internal.lintchecks.iml" filepath="$PROJECT_DIR$/.idea/modules/-222583064/ASMR.internal.lintchecks.iml" />
+    </modules>
+  </component>
+</project>
