@@ -12,7 +12,7 @@ Getting Started
 - [Add Firebase to your Android Project](https://firebase.google.com/docs/android/setup).
 - Log in to the [Firebase Console](https://console.firebase.google.com).
 - Go to **Auth** tab and enable **Email/Password** authentication.
-- Create database at {Realtime Database](https://firebase.google.com/products/realtime-database?hl=ko).
+- Create database at [Realtime Database](https://firebase.google.com/products/realtime-database?hl=ko).
 - Run the sample on Android device or emulator.
 
 Result
