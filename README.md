@@ -19,11 +19,11 @@ Result
 -----------
 -사용자 로그인시
 
-<img src="app/src/main/login.png" height="300" width="180"/><img src="app/src/main/board.png" height="300" width="180"/><img src="app/src/main/myboard.png" height="300" width="180"/><img src="app/src/main/write.png" height="300" width="180"/><img src="app/src/main/map.png" height="300" width="180"/>
+<img src="app/src/main/login.png" height="400" width="250"/><img src="app/src/main/board.png" height="400" width="250"/><img src="app/src/main/myboard.png" height="400" width="250"/><img src="app/src/main/write.png" height="400" width="250"/><img src="app/src/main/map.png" height="400" width="250"/>
 
 
 -관리자 로그인시
 
-<img src="app/src/main/adminboard.png" height="300" width="180"/><img src="app/src/main/adminboard2.png" height="300" width="180"/>
+<img src="app/src/main/adminboard.png" height="400" width="250"/><img src="app/src/main/adminboard2.png" height="400" width="250"/>
 
 
