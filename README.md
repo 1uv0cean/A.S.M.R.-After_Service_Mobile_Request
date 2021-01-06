@@ -25,7 +25,8 @@ Result
 
 
 -관리자 로그인시
+
 <img src="app/src/main/adminboard.png" height="300" width="180"/>
-<img src="app/src/main/amdinboard2.png" height="300" width="180"/>
+<img src="app/src/main/adminboard2.png" height="300" width="180"/>
 
 
