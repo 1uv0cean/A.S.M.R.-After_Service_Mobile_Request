@@ -24,6 +24,7 @@ Result
 <img src="app/src/write.png" height="534" width="300"/>
 <img src="app/src/map.png" height="534" width="300"/>
 
+
 -관리자 로그인시
 <img src="app/src/adminboard.png" height="534" width="300"/>
 <img src="app/src/amdinboard2.png" height="534" width="300"/>
