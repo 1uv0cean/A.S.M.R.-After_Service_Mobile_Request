@@ -18,15 +18,16 @@ Getting Started
 Result
 -----------
 -사용자 로그인시
-<img src="app/src/main/login.png" height="534" width="300"/>
-<img src="app/src/main/board.png" height="534" width="300"/>
-<img src="app/src/main/myboard.png" height="534" width="300"/>
-<img src="app/src/main/write.png" height="534" width="300"/>
-<img src="app/src/main/map.png" height="534" width="300"/>
+
+<img src="app/src/main/login.png" height="300" width="260"/>
+<img src="app/src/main/board.png" height="300" width="260"/>
+<img src="app/src/main/myboard.png" height="300" width="260"/>
+<img src="app/src/main/write.png" height="300" width="260"/>
+<img src="app/src/main/map.png" height="300" width="260"/>
 
 
 -관리자 로그인시
-<img src="app/src/main/adminboard.png" height="534" width="300"/>
-<img src="app/src/main/amdinboard2.png" height="534" width="300"/>
+<img src="app/src/main/adminboard.png" height="300" width="260"/>
+<img src="app/src/main/amdinboard2.png" height="300" width="260"/>
 
 
