@@ -30,9 +30,8 @@ public abstract class PostListFragment extends Fragment {
 
     private static final String TAG = "PostListFragment";
 
-    // [START define_database_reference]
+    //database reference를 정의합니다.
     private DatabaseReference mDatabase;
-    // [END define_database_reference]
 
     private FirebaseRecyclerAdapter<Post, PostViewHolder> mAdapter;
     private RecyclerView mRecycler;
@@ -46,9 +45,9 @@ public abstract class PostListFragment extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
         View rootView = inflater.inflate(R.layout.fragment_all_posts, container, false);
 
-        // [START create_database_reference]
+        //database reference를 정의합니다.
         mDatabase = FirebaseDatabase.getInstance().getReference();
-        // [END create_database_reference]
+
 
         mRecycler = rootView.findViewById(R.id.messagesList);
         mRecycler.setHasFixedSize(true);
@@ -60,13 +59,13 @@ public abstract class PostListFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        // Set up Layout Manager, reverse layout
+        // Layout Manager를 설정합니다.
         mManager = new LinearLayoutManager(getActivity());
         mManager.setReverseLayout(true);
         mManager.setStackFromEnd(true);
         mRecycler.setLayoutManager(mManager);
 
-        // Set up FirebaseRecyclerAdapter with the Query
+        // FirebaseRecyclerAdapter를 설정합니다.
         Query postsQuery = getQuery(mDatabase);
 
         FirebaseRecyclerOptions options = new FirebaseRecyclerOptions.Builder<Post>()
@@ -85,12 +84,12 @@ public abstract class PostListFragment extends Fragment {
             protected void onBindViewHolder(PostViewHolder viewHolder, int position, final Post model) {
                 final DatabaseReference postRef = getRef(position);
 
-                // Set click listener for the whole post view
+                // 모든 게시글에 대해서 setOnClickListner를 설정합니다.
                 final String postKey = postRef.getKey();
                 viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // Launch PostDetailActivity
+                        // PostDetailActivity를 실행시킵니다.
                         Intent intent = new Intent(getActivity(), PostDetailActivity.class);
                         intent.putExtra(PostDetailActivity.EXTRA_POST_KEY, postKey);
                         startActivity(intent);
@@ -98,15 +97,14 @@ public abstract class PostListFragment extends Fragment {
                 });
 
 
-                // Bind Post to ViewHolder, setting OnClickListener for the star button
                 viewHolder.bindToPost(model, new View.OnClickListener() {
                     @Override
                     public void onClick(View starView) {
-                        // Need to write to both places the post is stored
+
                         DatabaseReference globalPostRef = mDatabase.child("posts").child(postRef.getKey());
                         DatabaseReference userPostRef = mDatabase.child("user-posts").child(model.uid).child(postRef.getKey());
 
-                        // Run two transactions
+
                         onStarClicked(globalPostRef);
                         onStarClicked(userPostRef);
                     }

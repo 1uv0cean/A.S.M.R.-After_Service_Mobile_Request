@@ -41,7 +41,7 @@ public class  MainActivity extends BaseActivity {
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Create the adapter that will return a fragment for each section
+        //adapter를 생성하여 클릭시 프래그먼트를 이동시켜줌
         FragmentPagerAdapter mPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager(),
                 FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
             private final Fragment[] mFragments = new Fragment[]{
