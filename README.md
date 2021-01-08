@@ -5,6 +5,7 @@ Introduction
 ------------
 
 - 게시판 형식의 A/S접수 어플리케이션
+- 관리자 계정: admin@itc.ac.kr로 생성
 
 Getting Started
 ---------------
